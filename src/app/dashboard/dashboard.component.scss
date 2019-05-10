@@ -1,0 +1,60 @@
+.dashboard {
+    .content-top {
+        margin-bottom: 30px;
+    }
+    .table-section {
+        overflow-y: auto;
+        max-height: 500px;
+        clear: both;
+        .search {
+            padding: 4px 8px;
+            float: right;
+            .input-box {
+                font-size: 12px;
+                border-radius: 0;
+                width: 180px;
+                transition: width 400ms;
+                &:focus,
+                &.has-content {
+                    width: 250px;
+                }
+            }
+        }
+        .form-control:focus {
+            box-shadow: none;
+        }
+        .table {
+            th {
+                text-transform: uppercase;
+                text-align: center;
+                border: 1px solid #ddd;
+                &:first-child {
+                    border-left: none;
+                }
+                &:last-child {
+                    border-right: none;
+                }
+            }
+            tr {
+                text-align: center;
+            }
+            td {
+                border: 1px solid #ddd;
+                &:first-child {
+                    border-left: none;
+                }
+                &:last-child {
+                    border-right: none;
+                }
+            }
+        }
+    }
+    #pie-chart {
+        width: 100%;
+        height: 350px;
+    }
+    #line-chart {
+        width: 100%;
+        height: 400px;
+    }
+}
